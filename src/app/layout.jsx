@@ -1,5 +1,6 @@
 import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
+import Link from "next/link";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -22,7 +23,25 @@ export default function RootLayout({ children }) {
       lang="en"
       className={`${geistSans.variable} ${geistMono.variable} h-full antialiased`}
     >
-      <body className="min-h-full flex flex-col">{children}</body>
+      <body className="min-h-full flex flex-col">
+        <header className="px-5 py-2 flex justify-between items-center gap-5 bg-stone-800">
+          <img
+            src="/Copilot_20260409_220154.png"
+            alt=""
+            className="w-[120px]"
+          />
+          <div className="space-x-5">
+            <Link className="btn btn-primary" href="/foods">
+              Food
+            </Link>
+            <Link className="btn btn-primary" href="/reviews">
+              Reviews
+            </Link>
+          </div>
+        </header>
+
+        <main className="px-4 py-5">{children}</main>
+      </body>
     </html>
   );
 }

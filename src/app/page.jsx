@@ -8,7 +8,7 @@ export default function Home() {
         <h2 className="text-8xl absolute inset-0 -top-20 opacity-10 font-medium">Fetchoing Rendering & Styling</h2>
       </div>
       <div className="">
-        <button className="btn">Lets Explore</button>
+        <button className="btn btn-primary">Lets Explore</button>
       </div>
     </div>
   );

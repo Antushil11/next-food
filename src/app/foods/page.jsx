@@ -12,7 +12,7 @@ const Foods = async () => {
     const food =await getFoods();
     return (
         <div>
-            Food {food.length} Found
+            Food {food.length} Founds.
         </div>
     );
 };

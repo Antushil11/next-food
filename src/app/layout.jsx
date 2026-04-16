@@ -25,16 +25,18 @@ export default function RootLayout({ children }) {
     >
       <body className="min-h-full flex flex-col">
         <header className="px-5 py-2 flex justify-between items-center gap-5 bg-stone-800">
+          <Link href={"/"}>
           <img
             src="/Copilot_20260409_220154.png"
             alt=""
             className="w-[120px]"
           />
+          </Link>
           <div className="space-x-5">
-            <Link className="btn btn-primary" href="/foods">
+            <Link className="btn bg-green-600" href="/foods">
               Food
             </Link>
-            <Link className="btn btn-primary" href="/reviews">
+            <Link className="btn bg-green-600" href="/reviews">
               Reviews
             </Link>
           </div>

@@ -1,5 +1,6 @@
 import FoodCard from "@/components/cards/FoodCard";
 import React from "react";
+import { resolve } from "styled-jsx/css";
 
 const getFoods = async () => {
   const res = await fetch(
@@ -7,6 +8,7 @@ const getFoods = async () => {
   );
 
   const data = await res.json();
+  await new Promise((resolve) => setTimeout(resolve, 3000));
   return data.foods || [];
 };
 

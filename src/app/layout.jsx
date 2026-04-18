@@ -34,7 +34,7 @@ export default function RootLayout({ children }) {
           </Link>
           <div className="space-x-5">
             <Link className="btn bg-green-600" href="/foods">
-              Food
+              Foods
             </Link>
             <Link className="btn bg-green-600" href="/reviews">
               Reviews

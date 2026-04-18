@@ -41,7 +41,7 @@ export default function FoodCard({ food, onAddToCart, onViewDetails }) {
             onClick={() => onViewDetails?.(food)}
             className="flex-1 bg-gray-100 text-gray-800 py-2 rounded-lg hover:bg-gray-200 transition text-center flex items-center justify-center"
           >
-            View Details
+            View Details  
           </Link>
         </div>
       </div>

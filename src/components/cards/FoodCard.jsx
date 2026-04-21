@@ -1,6 +1,7 @@
 "use client";
 import Link from "next/link";
 import React from "react";
+import CartButton from "../buttons/CartButton";
 
 export default function FoodCard({ food, onAddToCart, onViewDetails }) {
   return (
@@ -29,12 +30,7 @@ export default function FoodCard({ food, onAddToCart, onViewDetails }) {
 
         {/* Buttons */}
         <div className="flex gap-2 pt-3">
-          <button
-            onClick={() => onAddToCart(food)}
-            className="flex-1 bg-green-600 text-white py-2 rounded-lg hover:bg-green-700 transition"
-          >
-            Add to Cart
-          </button>
+          <CartButton></CartButton>
 
           <Link
             href={`/foods/${food.id}`}

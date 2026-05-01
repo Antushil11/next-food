@@ -30,7 +30,7 @@ export default function FoodCard({ food, onAddToCart, onViewDetails }) {
 
         {/* Buttons */}
         <div className="flex gap-2 pt-3">
-          <CartButton></CartButton>
+          <CartButton food={food}></CartButton>
 
           <Link
             href={`/foods/${food.id}`}

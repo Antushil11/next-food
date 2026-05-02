@@ -6,7 +6,7 @@ export default function Home() {
       <div className="relative">
         <h1 className="text-4xl font-bold">Next JS Fetching & Rendering</h1>
         <h2 className="text-8xl absolute inset-0 -top-20 opacity-10 font-medium">
-          Fetchoing Rendering & Styling
+          Fetchoing Rendering and Styling
         </h2>
       </div>
       <div className="">

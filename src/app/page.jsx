@@ -6,11 +6,11 @@ export default function Home() {
       <div className="relative">
         <h1 className="text-4xl font-bold">Next JS Fetching & Rendering</h1>
         <h2 className="text-8xl absolute inset-0 -top-20 opacity-10 font-medium">
-          Fetchoing Rendering and Styling
+          Fetchoing Rendering && Styling
         </h2>
       </div>
       <div className="">
-        <button className="btn bg-green-600">Lets Explore</button>
+        <button className="btn bg-green-600">Lets Explore </button>
       </div>
     </div>
   );
